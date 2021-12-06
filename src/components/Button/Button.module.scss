@@ -1,0 +1,25 @@
+.root {
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.primary {
+    background: #0074f1;
+    color: #ffffff;
+
+    &:hover {
+        background: #0061cb;
+    }
+}
+
+.secondary {
+    background: #6c757d;
+    color: #ffffff;
+
+    &:hover {
+        background: #5c636a;
+    }
+}

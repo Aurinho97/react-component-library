@@ -1,20 +1,31 @@
 {
-  "name": "react-component-library",
+  "name": "@Aurinho97/react-component-library",
   "version": "1.0.0",
   "description": "A react component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest"
   },
   "author": "aurimas.tunaitis@interactio.io",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
     "@types/react": "^17.0.37",
+    "babel-jest": "^27.4.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.3",
     "react": "^17.0.2",
     "rollup": "^2.60.2",
     "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^4.5.2"
   },
   "main": "dist/cjs/index.js",
@@ -22,5 +33,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Aurinho97"
+  }
 }

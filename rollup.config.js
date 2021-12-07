@@ -2,12 +2,25 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
+import copy from 'rollup-plugin-copy'
 import dts from 'rollup-plugin-dts';
 import autoprefixer from 'autoprefixer';
 
 const packageJson = require('./package.json');
 
 export default [
+    {
+        input: 'src/index.scss',
+        output: {
+            file: 'dist/index.css'
+        },
+        plugins: [
+            postcss({
+                extract: true,
+                minimize: true
+            })
+        ]
+    },
     {
         input: 'src/index.ts',
         output: [
@@ -29,8 +42,14 @@ export default [
             postcss({
                 plugins: [autoprefixer()],
                 sourceMap: true,
-                extract: true,
+                extract: false,
                 minimize: true
+            }),
+            copy({
+                targets: [
+                    { src: 'src/index.scss', dest: 'dist' },
+                    { src: 'src/styles', dest: 'dist' }
+                ]
             })
         ]
     },

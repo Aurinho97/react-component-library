@@ -1,5 +1,5 @@
 /* global tokens */
-:global(:root) {
+:root {
   --global-color-blue-400: 0 116 241;
   --global-color-blue-500: 0 97 203;
   --global-color-gray-400: 108 117 125;
@@ -7,7 +7,7 @@
 }
 
 /* alias tokens */
-:global(:root) {
+:root {
   --global-color-primary-button-background: var(--global-color-blue-400);
   --global-color-primary-button-hover-background: var(--global-color-blue-500);
   --global-color-secondary-button-background: var(--global-color-gray-400);

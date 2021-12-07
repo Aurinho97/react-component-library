@@ -7,19 +7,19 @@
 }
 
 .primary {
-    background: rgb(var(--global-color-primary-button-background));
+    background: RGB(var(--global-color-primary-button-background));
     color: #ffffff;
 
     &:hover {
-        background: rgb(var(--global-color-primary-button-hover-background));
+        background: RGB(var(--global-color-primary-button-hover-background));
     }
 }
 
 .secondary {
-    background: rgb(var(--global-color-secondary-button-background));
+    background: RGB(var(--global-color-secondary-button-background));
     color: #ffffff;
 
     &:hover {
-        background: rgb(var(--global-color-secondary-button-hover-background))
+        background: RGB(var(--global-color-secondary-button-hover-background))
     }
 }

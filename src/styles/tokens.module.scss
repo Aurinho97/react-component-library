@@ -8,16 +8,8 @@
 
 /* alias tokens */
 :global(:root) {
-  --global-color-primary-button-background: var(
-    --global-color-blue-400
-  );
-  --global-color-primary-button-hover-background: var(
-    --global-color-blue-500
-  );
-  --global-color-secondary-button-background: var(
-    --global-color-gray-400
-  );
-  --global-color-secondary-button-hover-background: var(
-    --global-color-gray-500
-  );
+  --global-color-primary-button-background: var(--global-color-blue-400);
+  --global-color-primary-button-hover-background: var(--global-color-blue-500);
+  --global-color-secondary-button-background: var(--global-color-gray-400);
+  --global-color-secondary-button-hover-background: var(--global-color-gray-500);
 }

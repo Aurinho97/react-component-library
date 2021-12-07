@@ -7,19 +7,19 @@
 }
 
 .primary {
-    background: #0074f1;
+    background: rgb(var(--global-color-primary-button-background));
     color: #ffffff;
 
     &:hover {
-        background: #0061cb;
+        background: rgb(var(--global-color-primary-button-hover-background));
     }
 }
 
 .secondary {
-    background: #6c757d;
+    background: rgb(var(--global-color-secondary-button-background));
     color: #ffffff;
 
     &:hover {
-        background: #5c636a;
+        background: rgb(var(--global-color-secondary-button-hover-background))
     }
 }

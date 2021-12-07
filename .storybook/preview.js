@@ -1,4 +1,4 @@
-import '../dist/esm/index.css'
+import '../src/styles/index.module.scss';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
